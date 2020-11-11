@@ -4,5 +4,4 @@
 
 m = input("Введите несколько слов через пробелы: ").split ()
 for index, value in enumerate (m,1):
-    print (index, value)
-print (m[0][:10])
+    print (index, value [:10])

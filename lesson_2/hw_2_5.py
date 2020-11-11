@@ -10,15 +10,9 @@
 list = [7, 5, 3, 3, 2]
 print (f"Рейтинг {list}")
 new_n = int(input("Введите число:"))
-for i in range(len(list)):
-    if list[i] == new_n:
-        list.insert(i+1,new_n)
-        break
-    elif list[0] < new_n:
-        list.insert(0,new_n)
-    elif list[-1] > new_n:
-        list.append(new_n)
-    elif list[i]> new_n and list[i+1]< new_n:
-        list.insert(i+1, new_n)
-        break
+i=0
+for n in list:
+    if new_n <= n:
+        i+=1
+list.insert(i, new_n)
 print(f"Новый рейтинг {list}")
