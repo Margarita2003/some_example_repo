@@ -4,7 +4,6 @@
 # только первые n чисел, начиная с 1! и до n!.
 #Подсказка: факториал числа n — произведение чисел от 1 до n. Например, факториал четырёх 4! = 1 * 2 * 3 * 4 = 24.
 
-from itertools import count
 from math import factorial
 
 def my_fnc(el):
