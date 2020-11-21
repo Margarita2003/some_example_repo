@@ -10,3 +10,14 @@ def div (*args):
         return None
 
 print (div())
+
+def div (*args):
+    try:
+        x = int(input("Введите число: "))
+        y = int(input("Введите число: "))
+        res = x/y
+    except ZeroDivisionError:
+        return ("На ноль делить нельзя")
+
+    return res
+print (div())
